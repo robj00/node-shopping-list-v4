@@ -74,6 +74,7 @@ const Recipes = {
   },
   update: function(updatedItem) {
     console.log(`Updating recipe with id \`${updatedItem.id}\``);
+    console.log(updatedItem);
     const {id} = updatedItem;
     if (!(id in this.items)) {
       throw StorageException(
